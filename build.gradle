@@ -15,7 +15,7 @@ plugins {
     id "maven-publish"
     id "idea"
     id "jacoco"
-    id "org.springframework.boot"
+    id "org.springframework.boot" version "${spring_boot_version}"
     id "com.google.cloud.tools.jib"
     id "com.gorylenko.gradle-git-properties"
     id "org.openapi.generator"
@@ -63,7 +63,7 @@ if (project.hasProperty("gae")) {
             mavenBom 'io.github.jhipster:jhipster-dependencies:${jhipster_dependencies_version}'
         }
     }
-    appengineStage.dependsOn thinResolve 
+    appengineStage.dependsOn thinResolve
 }
 
 
@@ -197,7 +197,7 @@ dependencies {
     // Use ", version: jhipster_dependencies_version, changing: true" if you want
     // to use a SNAPSHOT release instead of a stable release
     implementation group: "io.github.jhipster", name: "jhipster-framework"
-    implementation "org.springframework.boot:spring-boot-starter-cache"
+    implementation "org.springframework.boot:spring-boot-starter-cache:${spring_boot_version}"
     implementation "io.dropwizard.metrics:metrics-core"
     implementation "io.micrometer:micrometer-registry-prometheus"
     implementation "net.logstash.logback:logstash-logback-encoder"
@@ -222,25 +222,25 @@ dependencies {
     liquibaseRuntime "org.liquibase:liquibase-core"
     liquibaseRuntime "org.liquibase.ext:liquibase-hibernate5:${liquibase_hibernate5_version}"
     liquibaseRuntime sourceSets.main.compileClasspath
-    implementation "org.springframework.boot:spring-boot-loader-tools"
-    implementation "org.springframework.boot:spring-boot-starter-mail"
-    implementation "org.springframework.boot:spring-boot-starter-logging"
-    implementation "org.springframework.boot:spring-boot-starter-actuator"
-    implementation "org.springframework.boot:spring-boot-starter-aop"
-    implementation "org.springframework.boot:spring-boot-starter-data-jpa"
-    implementation "org.springframework.boot:spring-boot-starter-security"
-    implementation ("org.springframework.boot:spring-boot-starter-web") {
+    implementation "org.springframework.boot:spring-boot-loader-tools:${spring_boot_version}"
+    implementation "org.springframework.boot:spring-boot-starter-mail:${spring_boot_version}"
+    implementation "org.springframework.boot:spring-boot-starter-logging:${spring_boot_version}"
+    implementation "org.springframework.boot:spring-boot-starter-actuator:${spring_boot_version}"
+    implementation "org.springframework.boot:spring-boot-starter-aop:${spring_boot_version}"
+    implementation "org.springframework.boot:spring-boot-starter-data-jpa:${spring_boot_version}"
+    implementation "org.springframework.boot:spring-boot-starter-security:${spring_boot_version}"
+    implementation ("org.springframework.boot:spring-boot-starter-web:${spring_boot_version}") {
         exclude module: "spring-boot-starter-tomcat"
     }
-    implementation "org.springframework.boot:spring-boot-starter-undertow"
-    implementation "org.springframework.boot:spring-boot-starter-websocket"
-    implementation "org.springframework.boot:spring-boot-starter-thymeleaf"
+    implementation "org.springframework.boot:spring-boot-starter-undertow:${spring_boot_version}"
+    implementation "org.springframework.boot:spring-boot-starter-websocket:${spring_boot_version}"
+    implementation "org.springframework.boot:spring-boot-starter-thymeleaf:${spring_boot_version}"
     implementation "org.zalando:problem-spring-web"
-    implementation "org.springframework.boot:spring-boot-starter-cloud-connectors"
-    implementation "org.springframework.security:spring-security-config"
-    implementation "org.springframework.security:spring-security-data"
-    implementation "org.springframework.security:spring-security-web"
-    implementation "org.springframework.security:spring-security-messaging"
+    implementation "org.springframework.boot:spring-boot-starter-cloud-connectors:${spring_boot_version}"
+    implementation "org.springframework.security:spring-security-config:${spring_security_version}"
+    implementation "org.springframework.security:spring-security-data:${spring_security_version}"
+    implementation "org.springframework.security:spring-security-web:${spring_security_version}"
+    implementation "org.springframework.security:spring-security-messaging:${spring_security_version}"
     implementation "io.jsonwebtoken:jjwt-api"
     if (!project.hasProperty("gae")) {
         runtimeOnly "io.jsonwebtoken:jjwt-impl"
@@ -263,12 +263,12 @@ dependencies {
         exclude group: "com.vaadin.external.google", module: "android-json"
     }
     testImplementation "com.jayway.jsonpath:json-path"
-    testImplementation ("org.springframework.boot:spring-boot-starter-test") {
+    testImplementation ("org.springframework.boot:spring-boot-starter-test:${spring_boot_version}") {
         exclude module: "junit"
         exclude group: "com.vaadin.external.google", module: "android-json"
     }
-    testImplementation "org.springframework.security:spring-security-test"
-    testImplementation "org.springframework.boot:spring-boot-test"
+    testImplementation "org.springframework.security:spring-security-test:${spring_security_version}"
+    testImplementation "org.springframework.boot:spring-boot-test:${spring_boot_version}"
     testImplementation "org.junit.jupiter:junit-jupiter-engine"
     testImplementation "com.tngtech.archunit:archunit-junit5-api:${archunit_junit5_version}"
     testRuntimeOnly "com.tngtech.archunit:archunit-junit5-engine:${archunit_junit5_version}"
