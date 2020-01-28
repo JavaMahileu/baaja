@@ -18,11 +18,23 @@ Please note we DO NOT have a code of conduct, and hope we never need it.
 
 ## Pull Request Process
 
-1. Ensure any install or build dependencies are removed before the end of the layer when doing a 
-   build.
+### Pull requests generally
+
+1. The smaller the proposed change, the better. If you'd like to propose two unrelated changes, submit two pull requests.
+2. The more information, the better. Make judicious use of the pull request body. Describe what changes were made, why you made them, and what impact they will have for users.
 3. Reference Trello ticket (number and name) in the title of Pull Request
 2. You may merge the Pull Request in once you have the sign-off of two other developers, or if you 
    do not have permission to do that, you may request the second reviewer to merge it for you.
+
+### Submitting a pull request via Git command line
+
+1. Fork the project by clicking "Fork" in the top right corner of [`Baaja`](https://github.com/JavaMahileu/baaja).
+2. Clone the repository locally `git clone https://github.com/<you-username>/baaja`.
+3. Create a new, descriptively named branch to contain your change ( `git checkout -b my-awesome-feature` ).
+4. Hack away, add tests. Not necessarily in that order.
+5. Make sure everything still passes by running tests (see the README_jhipster)
+6. Push the branch up ( `git push origin my-awesome-feature` ).
+7. Create a pull request by visiting `https://github.com/<your-username>/baaja` and following the instructions at the top of the screen.
 
 ## Style Guide
 
