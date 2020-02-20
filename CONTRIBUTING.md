@@ -9,7 +9,8 @@ And the last one - is to get working tool that we could use in our Community.
 
 Please get familiar with the idea of this project to be on the same side with us: 
 [Project Scope and Vision](https://drive.google.com/file/d/1dhqX1FNDGvTn3l3Ud-k-F6wdFsGefdng/view?usp=sharing)  
-[Architecture and other docs](https://docs.google.com/document/d/18JmZTkDB2DsSjAmbBcGKm5crNTBJ0MIsoGI2WYReuG8/edit?usp=sharing)  
+[Architecture and other docs](https://docs.google.com/document/d/18JmZTkDB2DsSjAmbBcGKm5crNTBJ0MIsoGI2WYReuG8/edit?usp=sharing) 
+[Join Telegram Chat](https://t.me/joinchat/FT4fihZ8kvlOEv9mCBI0lw)
 
 When contributing to this repository, please first indicate you intention on this [Trello Board](https://trello.com/b/GoISjUOA/baaja)
 so that we track our progress and do not take the same tasks simultaneously.
