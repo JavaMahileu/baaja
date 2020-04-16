@@ -15,7 +15,7 @@ const accountMenuItemsAuthenticated = (
       Password
     </MenuItem>
     <MenuItem icon="sign-out-alt" to="/logout">
-      Sign out
+      Log out
     </MenuItem>
   </>
 );
@@ -23,10 +23,10 @@ const accountMenuItemsAuthenticated = (
 const accountMenuItems = (
   <>
     <MenuItem id="login-item" icon="sign-in-alt" to="/login">
-      Sign in
+      Log in
     </MenuItem>
     <MenuItem icon="sign-in-alt" to="/account/register">
-      Register
+      Sign up
     </MenuItem>
   </>
 );
